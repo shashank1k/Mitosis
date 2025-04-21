@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>🎉MITOSIS WEEKLY WINNER CHECKER🎉</title>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4357402771134218"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="head">
+      <h1>🎉MITOSIS WEEKLY WINNER CHECKER🎉</h1>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="icon">
+          <img src="logo.jpg" alt="" />
+        </div>
+        <div class="content">
+          <input
+            type="text"
+            class="inputtext"
+            id="address"
+            placeholder="0x123..............................xyz"
+          />
+
+          <button onclick="copyText()" id="copying">SUBMIT</button>
+          <div class="down" id="Token"></div>
+          <div class="down" id="TGE"></div>
+          <div class="down"></div>
+          <div class="down"></div>
+        </div>
+      </div>
+    </div>
+    <p>Created with 💖</p>
+
+    <script>
+      const datawinner = [
+        "appnetsolutions",
+        "muhammadabdullah1072010",
+        "aburameshino_",
+        "nfd_11",
+        "andyeheh",
+        "atanifx",
+        "udemygodx",
+        "zain.arshad",
+        "timotee5698",
+        "engin.erol",
+        "j818091",
+        "jfotoglou",
+        "kadyrex",
+        "l1ghtik",
+        "levaopaki.",
+        "lucasseomin",
+        "boredapebro",
+        "nedy26",
+        "nguyennguyen7",
+        "patientp238",
+        "petranto",
+        "politechsguy",
+        "reaper_40000",
+        "rick_at_home",
+        "scorzn",
+        "cyano3714",
+        "strike.killer",
+        "chikwenduagwu",
+        "wzscarlet",
+        "alona9588",
+      ];
+      async function copyText() {
+        let inputValue = document
+          .getElementById("address")
+          .value.trim()
+          .toLowerCase();
+        let transact = 0;
+        console.log();
+        //console.log("Match - ", match);
+        //console.log(result);
+        console.log(datawinner);
+        let result;
+        if (!datawinner.includes(inputValue)) {
+          document.getElementById("Token").style.display = "inline";
+          document.getElementById("Token").innerHTML = "BAD LUCK😥😥";
+          document.getElementById("TGE").style.display = "none";
+        } else {
+          document.getElementById("Token").style.display = "inline";
+          document.getElementById("Token").innerHTML = "Congratulations";
+          document.getElementById("TGE").style.display = "inline";
+          document.getElementById("TGE").innerHTML = "WON 0.1 MORSE";
+        }
+        //console.log("Reward Data:", rewardData);
+        // const apiUrl =
+        //   "https://soneium.blockscout.com/api/v2/addresses/" +
+        //   inputValue +
+        //   "/counters";
+        // fetch(apiUrl)
+        //   .then((response) => {
+        //     if (!response.ok) {
+        //       //throw new Error("Network response was not ok");
+        //       document.getElementById("down1").style.display = "inline";
+        //       document.getElementById("down1").innerHTML = "Try Again!!😥😥";
+        //     }
+        //     return response.json();
+        //   })
+        //   .then((data) => {
+        //     console.log(data.transactions_count);
+        //     transact = data.transactions_count;
+
+        //     document.getElementById("down1").style.display = "inline";
+        //     document.getElementById("down1").innerHTML =
+        //       "Transaction count = " + transact.toString();
+        //   })
+        //   .catch((error) => {
+        //     console.error("Error:", error);
+        //   });
+        // //navigator.clipboard.writeText("PYCY6142");
+        // //document.getElementById("copying").innerHTML = transact.toString();
+        // document.getElementById("copying").style.backgroundColor = "red";
+        // document.getElementById("copying").style.background =
+        //   "rgb(10, 250, 62)";
+      }
+    </script>
+  </body>
+</html>
